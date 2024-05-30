@@ -11,30 +11,63 @@
 
 <body>
 
-  Bill
+  <main>
+    <img src="./assets/images/logo.svg" alt="Splitter">
+    <div class="wrapper">
+      <form id="form">
+        <div>
+          <label for="bill">Bill</label>
+          <input id="bill" name="bill" type="number">
+        </div>
+        <fieldset>
+          <legend>Select Tip %</legend>
+          <div class="tip-amount__item">
+            <input type="radio" class="tip-amount__input sr-only" name="tip" id="tip5" value="5"></input>
+            <label for="tip5" class="tip-amount__label">5%</label>
+          </div>
+          <div class="tip-amount__item">
+            <input type="radio" class="tip-amount__input sr-only" name="tip" id="tip10" value="10"></input>
+            <label for="tip10" class="tip-amount__label">10%</label>
+          </div>
+          <div class="tip-amount__item">
+            <input type="radio" class="tip-amount__input sr-only" name="tip" id="tip15" value="15"></input>
+            <label for="tip15" class="tip-amount__label">15%</label>
+          </div>
+          <div class="tip-amount__item">
+            <input type="radio" class="tip-amount__input sr-only" name="tip" id="tip25" value="25"></input>
+            <label for="tip25" class="tip-amount__label">25%</label>
+          </div>
+          <div class="tip-amount__item">
+            <input type="radio" class="tip-amount__input sr-only" name="tip" id="tip50" value="50"></input>
+            <label for="tip50" class="tip-amount__label">50%</label>
+          </div>
+          <div class="tip-amount__conditional">
+            <input type="radio" class="tip-amount__input sr-only" name="tip" id="tipCustom" value="custom"></input>
+            <label for="tipCustom" class="tip-amount__label-custom">Custom</label>
+            <input type="number" id="customTipInput" name="customtip">
+          </div>
+        </fieldset>
+        <div>
+          <label for="people">Number of People</label>
+          <input id="people" name="people" type="number">
+        </div>
+      </form>
+      <div class="output">
+        Tip Amount
+        / person
+        Total
+        / person
+        Reset
+      </div>
+    </div>
+  </main>
 
-  Select Tip %
-  5%
-  10%
-  15%
-  25%
-  50%
-  Custom
-
-  Number of People
-
-  Tip Amount
-  / person
-
-  Total
-  / person
-
-  Reset
-
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-    Coded by <a href="https://www.frontendmentor.io/jasoneczek">@jasoneczek</a>.
-  </div>
+  <footer class="footer">
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="https://www.frontendmentor.io/jasoneczek">@jasoneczek</a>.
+    </div>
+  </footer>
 
   <script src="./js/script.js"></script>
 </body>

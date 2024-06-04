@@ -53,27 +53,29 @@
         </div>
       </form>
       <div class="output">
-        <div class="output-group">
-          <h3 class="output-heading">
+        <div class="output__group">
+          <label for="tipAmount" class="output__heading">
             Tip Amount
             <span>/ person</span>
-          </h3>
-          <p class="tip-amt-output"></p>
+          </label>
+          <output id="tipAmount" class="output__tip-amount" aria-live="polite" name="tip"
+            for="bill people tip customTipInput">&dollar;<span class="dollarsign">0.00</span></output>
         </div>
-        <output-group>
-          <h3 class="output-heading">
+        <div class="output-group">
+          <label for="totalAmount" class="output__heading">
             Total
             <span>/ person</span>
-          </h3>
-          <p class="total-output"></p>
-        </output-group>
-        <button type="button" id="btn-reset" class="btn-reset">Reset</button>
+          </label>
+          <output id="totalAmount" class="output__total-amount" aria-live="polite" name="total"
+            for="bill people tip customTipInput">&dollar;<span class="dollarsign">0.00</span></output>
+        </div>
+        <button type="button" id="btnReset" class="btn btn-reset">Reset</button>
       </div>
     </div>
   </main>
 
   <footer class="footer">
-    <div class="attribution">
+    <div class="footer__attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
       Coded by <a href="https://www.frontendmentor.io/jasoneczek">@jasoneczek</a>.
     </div>

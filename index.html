@@ -12,12 +12,17 @@
 <body>
 
   <main>
-    <img src="./assets/images/logo.svg" alt="Splitter">
+    <img src="./assets/images/logo.svg" alt="Splitter" class="logo">
     <div class="wrapper">
-      <form id="form">
-        <div>
-          <label for="bill">Bill</label>
-          <input id="bill" name="bill" type="number">
+      <form id="form" class="form">
+        <div class="input-group">
+          <label class="input-label" for="bill">Bill</label>
+          <div class="input-container">
+            <span class="input-icon">
+              <img src="./assets/images/icon-dollar.svg" alt="">
+            </span>
+            <input id="bill" class="input" name="bill" type="number">
+          </div>
         </div>
         <fieldset>
           <legend>Select Tip %</legend>
@@ -47,9 +52,14 @@
             <input type="number" id="customTipInput" name="customtip">
           </div>
         </fieldset>
-        <div>
-          <label for="people">Number of People</label>
-          <input id="people" name="people" type="number">
+        <div class="input-group">
+          <label class="input-label" for="people">Number of People</label>
+          <div class="input-container">
+            <span class="input-icon">
+              <img src="./assets/images/icon-person.svg" alt="">
+            </span>
+            <input id="people" class="input" name="people" type="number">
+          </div>
         </div>
       </form>
       <div class="output">

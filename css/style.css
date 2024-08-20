@@ -200,6 +200,7 @@ main {
   display: flex;
   flex-direction: column;
   gap: 2rem;
+  margin-bottom: 2rem;
 }
 
 .input-label {
@@ -319,7 +320,44 @@ main {
   border-color: var(--clr--radio-cust-focus);
 }
 
-.custom .footer {
+.output {
+  background-color: var(--clr--brand-dk);
+  border-radius: 0.9375rem;
+  padding: 2.5rem 1.5rem 1.5rem 1.5rem;
+}
+
+.output__group {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+
+.output__heading {
+  color: var(--clr--white);
+  font-size: var(--fs-2);
+  margin: 0;
+}
+
+.person {
+  display: block;
+  color: var(--clr--label-output-span);
+  font-size: var(--fs-1);
+  margin-top: 0.5rem;
+}
+
+.output__tip-amount {
+  font-size: var(--fs-5);
+  color: var(--clr--brand-prim);
+  text-align: right;
+  margin: 0;
+}
+
+.btn-reset[disabled] {
+  background-color: var(--clr--btn-inactive);
+}
+
+.footer {
   display: none;
 }
 
